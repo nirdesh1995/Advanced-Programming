@@ -1,0 +1,207 @@
+Script started on Tue Feb 16 18:23:48 2016
+[?1034hbash-3.2$ exit [16@python3 factorial.py[C
+1
+1
+2
+6
+24
+bash-3.2$ python3 factorial.py [K[K[K[K[K[K[K[K[K[K[K[K[K-m[5Pexit [16@python3 factorial.py[C[C[C[C[C[C[C[C[C[C[Cls[Kexit [2@scrip[C[C[2Pexi[C[Ccd assign/ 4ls[Kcd desktop/[7Ppwd cpwdd desktop. /assign 4[C[C[C[C[C[C[C[C[C[C[C[C[C[1@/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit [K[2@scrip[C[C[2Pexi[C[Ccd assign 2/[1Pdesktop/assign 2pwd[Kexit [3Plsscriptpython3  pdb_exercise_5.py-m pdb pdb_exercise_5.py[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfactorial.py 
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(1)<module>()
+-> def factorial(n):
+(Pdb) l
+  1  ->	def factorial(n):
+  2  		if n==0:
+  3  			return 1
+  4  		else:
+  5  			return n*factorial(n-1)
+  6  	
+  7  	def print_factorial(n):
+  8  		for i in range(n):
+  9  			print(factorial(i))
+ 10  	
+ 11  	
+(Pdb) s
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(7)<module>()
+-> def print_factorial(n):
+(Pdb) n
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(12)<module>()
+-> if __name__=='__main__':
+(Pdb) n
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(13)<module>()
+-> print_factorial(5)
+(Pdb) n
+1
+1
+2
+6
+24
+--Return--
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(13)<module>()->None
+-> print_factorial(5)
+(Pdb) c[Kc
+The program finished and will be restarted
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(1)<module>()
+-> def factorial(n):
+(Pdb) b[Kn
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(7)<module>()
+-> def print_factorial(n):
+(Pdb) l
+  2  		if n==0:
+  3  			return 1
+  4  		else:
+  5  			return n*factorial(n-1)
+  6  	
+  7  ->	def print_factorial(n):
+  8  		for i in range(n):
+  9  			print(factorial(i))
+ 10  	
+ 11  	
+ 12  	if __name__=='__main__':
+(Pdb) b 7 
+Breakpoint 1 at /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py:7
+(Pdb) l
+ 13  		print_factorial(5)
+[EOF]
+(Pdb) l
+[EOF]
+(Pdb) n
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(12)<module>()
+-> if __name__=='__main__':
+(Pdb) l
+  7 B	def print_factorial(n):
+  8  		for i in range(n):
+  9  			print(factorial(i))
+ 10  	
+ 11  	
+ 12  ->	if __name__=='__main__':
+ 13  		print_factorial(5)
+[EOF]
+(Pdb) c
+1
+1
+2
+6
+24
+The program finished and will be restarted
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(1)<module>()
+-> def factorial(n):
+(Pdb) c
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(7)<module>()
+-> def print_factorial(n):
+(Pdb) l
+  2  		if n==0:
+  3  			return 1
+  4  		else:
+  5  			return n*factorial(n-1)
+  6  	
+  7 B->	def print_factorial(n):
+  8  		for i in range(n):
+  9  			print(factorial(i))
+ 10  	
+ 11  	
+ 12  	if __name__=='__main__':
+(Pdb) b 12
+Breakpoint 2 at /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py:12
+(Pdb) cl [K[Khelp cl 
+cl(ear) filename:lineno
+cl(ear) [bpnumber [bpnumber...]]
+        With a space separated list of breakpoint numbers, clear
+        those breakpoints.  Without argument, clear all breaks (but
+        first ask confirmation).  With a filename:lineno argument,
+        clear all breaks at that line in that file.
+(Pdb) cl 2 
+Deleted breakpoint 2 at /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py:12
+(Pdb) l
+ 13  		print_factorial(5)
+[EOF]
+(Pdb) disable 1
+Disabled breakpoint 1 at /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py:7
+(Pdb) enable 1
+Enabled breakpoint 1 at /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py:7
+(Pdb) helo [Kp condition
+condition bpnumber [condition]
+        Set a new condition for the breakpoint, an expression which
+        must evaluate to true before the breakpoint is honored.  If
+        condition is absent, any existing condition is removed; i.e.,
+        the breakpoint is made unconditional.
+(Pdb) n
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(12)<module>()
+-> if __name__=='__main__':
+(Pdb) c
+1
+1
+2
+6
+24
+The program finished and will be restarted
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(1)<module>()
+-> def factorial(n):
+(Pdb) condition 1[K[K[K[K[K[K[K[K[K[Kdsiab[K[K[K[Kisable b [K1 
+Disabled breakpoint 1 at /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py:7
+(Pdb) b 8 
+Breakpoint 3 at /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py:8
+(Pdb) condition 3  i<3 
+New condition set for breakpoint 3.
+(Pdb) l
+  1  ->	def factorial(n):
+  2  		if n==0:
+  3  			return 1
+  4  		else:
+  5  			return n*factorial(n-1)
+  6  	
+  7 B	def print_factorial(n):
+  8 B		for i in range(n):
+  9  			print(factorial(i))
+ 10  	
+ 11  	
+(Pdb) c
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(8)print_factorial()
+-> for i in range(n):
+(Pdb) condition 3 i.3[K[K>3 
+New condition set for breakpoint 3.
+(Pdb) c
+1
+1
+2
+6
+24
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(8)print_factorial()
+-> for i in range(n):
+(Pdb) c
+The program finished and will be restarted
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(1)<module>()
+-> def factorial(n):
+(Pdb) l
+  1  ->	def factorial(n):
+  2  		if n==0:
+  3  			return 1
+  4  		else:
+  5  			return n*factorial(n-1)
+  6  	
+  7 B	def print_factorial(n):
+  8 B		for i in range(n):
+  9  			print(factorial(i))
+ 10  	
+ 11  	
+(Pdb) tbreak 2 
+Breakpoint 4 at /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py:2
+(Pdb) c
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(8)print_factorial()
+-> for i in range(n):
+(Pdb) c
+Deleted breakpoint 4 at /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py:2
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(2)factorial()
+-> if n==0:
+(Pdb) c
+1
+1
+2
+6
+24
+> /Users/nirdeshbhandari/Desktop/Nirdesh_Assign4/factorial.py(8)print_factorial()
+-> for i in range(n):
+(Pdb) q
+bash-3.2$ exit 
+exit
+
+Script done on Tue Feb 16 18:44:22 2016
